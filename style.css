@@ -1,127 +1,743 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
-@font-face {
-    font-family: futurak;
-    src: url(./Fonts/futurak.ttf);
-}
-@font-face {
-    font-family: apercu;
-    src: url(./Fonts/Apercu-Font.zip);
-}
-header{
-    width: 100%; 
-     background-color: black;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.logo img{
-    width: 180px;
-    height: 100px;
-    
-}
-
-ul{
-    display: flex;
-}
-
-li{
-    list-style: none;
-   padding: 20px;
-   /* gap: 50px; */
-}
-
-li a{
-    color: white;
-    text-decoration: none;
-    gap: 50%;
-}
-.btn{
-    background: transparent;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border-radius: 50px;
-    border: 1px solid white;
-    margin-right: 20px;
-}
-
-.btn2{
-    background-color: red;
-    outline: none;
-    border: none;
-    font-weight: 30px;
-    color: white;
-    padding: 12px 10px 12px 10px;
-}
-i{
-    background-color: white;
-    border-radius: 50%;
-}
-.free img{
-    width: 100%;
-    height: 20%;
-}
-
-#black-div{
-    background-color: black;
-    width: 100%;
-     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    color: white;
-}
-
-.brand{
-    font-size: 40px;
-    font-family: apercu;
-}
-
-#black-div span{
-    color: white;
-    font-size: 60px;
-    font-family: futurak;
-    font-weight: 100;
-}
-#black-div p{
-    color: white;
-    font-family: apercu;
-}
-.container{
-    display: flex;
-    align-items: center;
-     width: 100%;
-    padding: 40px 16px 0 16px;
-    gap: 17px;
-}
-
-.img-div{
-    display: flex;
-   align-items: center;
-   
-}
-
-.img-div img{
-    width: 100%;           
-    height: 160px;
-    background-color: white;
-    padding: 10px;
-    
-}
-
-.img-div button{
-  
-       border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 30px;
-    
-    background-color: white;
-    color: #0b0a0a;
+   * {
+        margin: 0%;
+        padding: 0%;
         box-sizing: border-box;
-        padding: 15px;
-}
+      }
+      @font-face {
+        font-family: futurak;
+        src: url(./fonts/futurak.ttf);
+      }
+      @font-face {
+        font-family: butler;
+        src: url(./fonts/Butler_Bold.otf);
+      }
+      @font-face {
+        font-family: apercu;
+        src: url(./fonts/apercu-medium.ttf);
+      }
+      body {
+        background-color: #000;
+      }
+      header {
+        width: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
 
+      .logo img {
+        width: 180px;
+        height: 100px;
+      }
+
+      ul {
+        display: flex;
+      }
+
+      li {
+        list-style: none;
+        padding: 20px;
+        /* gap: 50px; */
+      }
+
+      li a {
+        color: white;
+        text-decoration: none;
+        gap: 50%;
+      }
+      .all-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .btn {
+        background: transparent;
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        font-weight: 600;
+        height: 45px;
+        border-radius: 50px;
+        border: 1px solid white;
+      }
+
+      .btn2 {
+        background-color: #df1e1e;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 10px 22px 10px 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-radius: 30px;
+        font-weight: 600;
+      }
+      .one {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 50%;
+        width: 26px;
+        height: 26px;
+      }
+
+      /* Arrow icon styling */
+      .one {
+        color: #d2391e;
+        font-size: 14px;
+      }
+      .free {
+        width: 100%;
+        padding: 0;
+      }
+      .free img {
+        width: 100%;
+        padding: 0;
+        height: auto;
+        display: block;
+      }
+      #black-div {
+        background-color: black;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        color: white;
+        padding-top: 60px;
+        padding-left: 17px;
+        padding-right: 14px;
+      }
+
+      .brand {
+        font-size: 40px;
+        font-family: apercu;
+      }
+
+      #black-div span {
+        color: white;
+        font-size: 60px;
+        font-family: futurak;
+        font-weight: 100;
+      }
+      #black-div p {
+        color: white;
+        font-family: apercu;
+      }
+
+      .container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      .box1 {
+        width: 100%;
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .box1 img {
+        width: 225px;
+        height: 160px;
+        padding: 9px;
+        gap: 8px;
+        background-color: white;
+      }
+      .box1 button {
+        padding: 17px 30px;
+        border-radius: 30px;
+        outline: none;
+        background: transparent;
+        border: none;
+        border: 1px solid #6d6d6d;
+      }
+
+      .box1 button a {
+        color: white;
+        text-decoration: none;
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+      }
+
+      /* restu view */
+
+      .view {
+        background-color: black;
+        color: white;
+        width: 100%;
+        /* text-align: center; */
+        padding: 100px 7px 0 7px;
+      }
+      .view2 {
+        text-align: center;
+      }
+
+      .view #salt {
+        font-family: futurak;
+        font-size: 60px;
+        font-weight: 100;
+      }
+      .view h1 {
+        font-family: apercu;
+        font-size: 48px;
+      }
+      .view p {
+        padding-top: 10px;
+      }
+      .info {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 30px;
+      }
+
+      .info img {
+        width: 400px;
+      }
+
+      .info p {
+        letter-spacing: 10px;
+        color: red;
+      }
+
+      .info h4 span {
+        font-family: futurak;
+        font-size: 32px;
+        font-weight: 100;
+      }
+      .info h4 {
+        font-size: 32px;
+        font-family: butler;
+      }
+
+      .info .pt {
+        color: white;
+        letter-spacing: 0;
+      }
+
+      .loc i {
+        background: transparent;
+        gap: 10px;
+      }
+      .icon {
+        padding-top: 60px;
+      }
+      .sp-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: transparent;
+        outline: none;
+        border: 1px solid #6d6d6d;
+        color: white;
+        padding: 0 22px;
+        height: 45px;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+
+      /* Anchor text inside button */
+      .sp-btn a {
+        text-decoration: none;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 15px;
+
+        display: flex;
+        align-items: center;
+      }
+
+      /* White round icon bubble */
+      .icon-wrap {
+        width: 26px;
+        height: 26px;
+        background-color: white;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .icon-wrap i {
+        color: #d2391e;
+        font-size: 14px;
+      }
+
+      /* fsd */
+
+      .fsd {
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        padding-top: 50px;
+      }
+
+      .fsd img {
+        width: 400px;
+      }
+
+      .fsd p {
+        letter-spacing: 10px;
+        color: red;
+      }
+
+      .fsd .head {
+        color: white;
+      }
+      .fsd .head span {
+        font-family: futurak;
+        font-size: 32px;
+        font-weight: 100;
+      }
+      .fsd .head {
+        font-size: 32px;
+        font-family: butler;
+      }
+
+      .fsd .add {
+        color: white;
+        letter-spacing: 0;
+        padding-top: 10px;
+      }
+
+      .location i {
+        background: transparent;
+        gap: 20px;
+      }
+      .ic {
+        padding-top: 50px;
+      }
+      /* Main Button Styling */
+      .b-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: transparent;
+        outline: none;
+        border: 1px solid #6d6d6d;
+        color: white;
+        padding: 0 22px;
+        height: 45px;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+
+      /* Anchor text inside button */
+      .b-btn a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        font-size: 15px;
+
+        display: flex;
+        align-items: center;
+      }
+
+      /* White round icon bubble */
+      .ic-wrap {
+        width: 26px;
+        height: 26px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .ic-wrap i {
+        color: #d2391e;
+        font-size: 14px;
+      }
+
+      /* fsd end */
+
+      /* bwp start */
+
+      .bwp {
+        width: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 50px;
+        padding: 50px;
+      }
+
+      .bwp img {
+        width: 400px;
+      }
+
+      .bwp p {
+        letter-spacing: 10px;
+        color: red;
+      }
+
+      .bwp .out {
+        color: white;
+      }
+      .bwp .out span {
+        font-family: futurak;
+        font-size: 32px;
+        font-weight: 100;
+      }
+      .bwp .out {
+        font-size: 32px;
+        font-family: butler;
+      }
+
+      .bwp .main {
+        color: white;
+        letter-spacing: 0;
+        padding-top: 10px;
+      }
+
+      .location i {
+        background: transparent;
+        gap: 20px;
+      }
+
+      /* Main Button Styling */
+      .h-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: transparent;
+        outline: none;
+        border: 1px solid #6d6d6d;
+        color: white;
+        padding: 0 22px;
+        height: 45px;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+
+      /* Anchor text inside button */
+      .h-btn a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        font-size: 15px;
+
+        display: flex;
+        align-items: center;
+      }
+
+      /* White round icon bubble */
+      .ico-wrap {
+        width: 26px;
+        height: 26px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .ico-wrap i {
+        color: #d2391e;
+        font-size: 14px;
+      }
+
+      /* imgs sections */
+
+      .section {
+        background-color: black;
+        color: white;
+        padding: 17px;
+      }
+      #futu {
+        font-family: futurak;
+        font-size: 60px;
+        font-weight: 100;
+      }
+      .exp {
+        text-align: center;
+        font-family: apercu;
+        font-size: 25px;
+      }
+
+      .exp-img {
+        width: 100%;
+        display: flex;
+        gap: 7px;
+      }
+      .exp2 {
+        width: 100%;
+        text-align: center;
+      }
+      .exp2 img {
+        width: 298px;
+        padding-top: 25px;
+      }
+      #point{
+        padding-top: 35px;
+      }
+      .city {
+        letter-spacing: 6px;
+        color: red;
+        padding-top: 22px;
+        padding-bottom: 15px;
+      }
+      .pepper {
+        font-size: 27px;
+        padding-bottom: 15px;
+      }
+      .pepper span {
+        font-family: futurak;
+        font-size: 27px;
+        font-weight: 100;
+        padding-bottom: 15px;
+      }
+      .salter {
+        padding-bottom: 15px;
+      }
+      .front {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+      }
+
+      .back {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: transparent;
+        outline: none;
+        border: 1px solid #6d6d6d;
+        color: white;
+        padding: 0 22px;
+        height: 45px;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+
+      /* Anchor text inside button */
+      .back a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        font-size: 15px;
+
+        display: flex;
+        align-items: center;
+      }
+
+      /* White round icon bubble */
+      .web {
+        width: 26px;
+        height: 26px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .web i {
+        color: #d2391e;
+        font-size: 14px;
+      }
+
+      /* scnd exp */
+      .scnd-exp{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 22px;
+      }
+       .exp3 img {
+        width: 298px;
+        padding-top: 25px;
+      }
+         .front {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+      }
+       .font {
+        display: flex;
+        justify-content: center;
+        padding-top: 43px;
+      }
+
+      .back {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: transparent;
+        outline: none;
+        border: 1px solid #6d6d6d;
+        color: white;
+        padding: 0 22px;
+        height: 45px;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+      /* Anchor text inside button */
+      .back a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        font-size: 15px;
+
+        display: flex;
+        align-items: center;
+      }
+
+      /* White round icon bubble */
+      .website {
+        width: 26px;
+        height: 26px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .website i {
+        color: #d2391e;
+        font-size: 14px;
+      }
+
+      /* thd exp */
+  
+
+      .thd-exp{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 22px;
+      }
+       .exp4 img {
+        width: 298px;
+        height: 240px;
+        padding-top: 25px;
+        
+      }
+       .front {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+      }
+      /* fth exp */
+      .fth-exp{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      .exp5 img{
+        width: 298px;
+        padding-top: 25px;
+      }
+      /* css make by junaid */
+      .header h1 {
+        font-size: 42px;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+      }
+
+      .header h2 {
+        font-size: 30px;
+        margin: 20px;
+        color: #fff;
+        text-align: center;
+      }
+
+      .header span {
+        font-size: 18px;
+        font-weight: normal;
+      } */
+
+      /* Cards */
+     
+
+      /* .footer {
+        background: #111;
+        color: #ccc;
+        padding: 60px 40px;
+        margin-top: 80px;
+      }
+
+      .footer-container {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+      }
+
+      .footer-col h4 {
+        color: #fff;
+        margin-bottom: 20px;
+      }
+
+      .logo {
+        color: #fff;
+        font-size: 22px;
+        margin-bottom: 15px;
+      }
+
+      .logo span {
+        color: #e50914;
+        font-size: 14px;
+      }
+
+      .footer-col p {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 15px;
+      }
+
+      .links a {
+        color: #aaa;
+        font-size: 13px;
+        margin-right: 10px;
+        text-decoration: none;
+      }
+
+      .footer-col ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .footer-col ul li {
+        font-size: 14px;
+        cursor: pointer;
+        padding: 5px;
+      }
+
+      .socials span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        background: #e50914;
+        color: #fff;
+        border-radius: 50%;
+        margin-right: 10px;
+        font-weight: bold;
+      }
+
+      .stores img {
+        width: 140px;
+        display: block;
+        margin-top: 15px;
+      } */
