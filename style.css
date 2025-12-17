@@ -454,9 +454,10 @@
       .section {
         background-color: black;
         color: white;
+        padding-bottom: 40px;
         padding: 17px;
       }
-      #futu {
+      .futu {
         font-family: futurak;
         font-size: 60px;
         font-weight: 100;
@@ -644,17 +645,124 @@
         width: 298px;
         padding-top: 25px;
       }
+
+      /* village start */
+      .gujar{
+        width: 100%;
+       background-color: rgba(255, 255, 255, 0.06);
+        padding-top: 50px;
+        padding-bottom: 20px;
+      }
+       .futu {
+        font-family: futurak;
+        font-size: 60px;
+        font-weight: 100;
+      }
+      .write {
+        text-align: center;
+        font-family: apercu;
+        font-size: 25px;
+        color: white;
+      }
+       .city {
+        letter-spacing: 6px;
+        color: red;
+        padding-top: 29px;
+        padding-bottom: 18px;
+      }
+      .pepper {
+        font-size: 27px;
+        padding-bottom: 22px;
+      }
+      .pepper span {
+        font-family: futurak;
+        font-size: 27px;
+        font-weight: 100;
+        padding-bottom: 15px;
+      }
+
+      .dha{
+        padding-top: 25px;
+        gap: 30px;
+        width: 100%;
+        display: flex;
+        color: white;
+      }
+
+      .dha-img img{
+        width: 528px;
+        height: 302px;
+        padding-top: 25px;
+      }
+      .mob{
+        display: flex;
+        flex-direction: column;
+      }
+
+         .click {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+      }
+       .touch {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: transparent;
+        outline: none;
+        border: 1px solid #777777;
+        background-color: green;
+        color: white;
+        padding: 0 22px;
+        height: 45px;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+
+      /* Anchor text inside button */
+      .touch a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        font-size: 15px;
+
+        display: flex;
+        align-items: center;
+      }
+
+      /* White round icon bubble */
+      .get {
+        width: 26px;
+        height: 26px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .get i {
+        color: #d2391e;
+        font-size: 14px;
+      }
+      /* village end */
+
       /* css make by junaid */
+
+      .header{
+        padding-top: 50px;
+      }
       .header h1 {
-        font-size: 42px;
-        font-weight: bold;
+        font-size: 55px;
+        font-family: futurak;
+        font-weight: 400;
         color: #fff;
         text-align: center;
       }
 
       .header h2 {
-        font-size: 30px;
-        margin: 20px;
+        font-size: 60px;
+        font-family: apercu;
         color: #fff;
         text-align: center;
       }
@@ -662,10 +770,26 @@
       .header span {
         font-size: 18px;
         font-weight: normal;
-      } */
+      } 
 
       /* Cards */
-     
+      .cards{
+        width: 100%;
+        padding-top: 30px;
+        color: black;
+      }
+      .card{
+       display: flex;
+        background-color: white;
+        border-radius: 20px;
+        /* text-align: center; */
+        width: 230px;
+        height: 230px;
+      }
+      .card1{
+        display: flex;
+        flex-direction: column;
+      }
 
       /* .footer {
         background: #111;
