@@ -31,17 +31,17 @@
         height: 100px;
       }
 
-      ul {
+     nav ul {
         display: flex;
       }
 
-      li {
+     nav ul  li {
         list-style: none;
         padding: 20px;
         /* gap: 50px; */
       }
 
-      li a {
+      nav ul li a {
         color: white;
         text-decoration: none;
         gap: 50%;
@@ -168,14 +168,15 @@
       }
 
       /* restu view */
-
+       
       .view {
         background-color: black;
         color: white;
         width: 100%;
-        /* text-align: center; */
+        position: relative;
         padding: 100px 7px 0 7px;
       }
+      
       .view2 {
         text-align: center;
       }
@@ -192,13 +193,19 @@
       .view p {
         padding-top: 10px;
       }
+
       .info {
         width: 100%;
         display: flex;
         justify-content: space-around;
         padding-top: 30px;
       }
-
+     .s{
+      position: absolute;
+      top: 0;
+      right: 0;
+      
+     }
       .info img {
         width: 400px;
       }
@@ -244,7 +251,7 @@
         cursor: pointer;
       }
 
-      /* Anchor text inside button */
+      /* inside button */
       .sp-btn a {
         text-decoration: none;
         color: white;
@@ -256,7 +263,7 @@
         align-items: center;
       }
 
-      /* White round icon bubble */
+      /* White bubble */
       .icon-wrap {
         width: 26px;
         height: 26px;
@@ -334,7 +341,7 @@
         cursor: pointer;
       }
 
-      /* Anchor text inside button */
+      /*inside button */
       .b-btn a {
         text-decoration: none;
         color: white;
@@ -345,7 +352,7 @@
         align-items: center;
       }
 
-      /* White round icon bubble */
+      /* White bubble */
       .ic-wrap {
         width: 26px;
         height: 26px;
@@ -422,7 +429,7 @@
         cursor: pointer;
       }
 
-      /* Anchor text inside button */
+      /* inside button */
       .h-btn a {
         text-decoration: none;
         color: white;
@@ -433,7 +440,7 @@
         align-items: center;
       }
 
-      /* White round icon bubble */
+      /* White bubble */
       .ico-wrap {
         width: 26px;
         height: 26px;
@@ -523,7 +530,7 @@
         cursor: pointer;
       }
 
-      /* Anchor text inside button */
+      /* inside button */
       .back a {
         text-decoration: none;
         color: white;
@@ -534,7 +541,7 @@
         align-items: center;
       }
 
-      /* White round icon bubble */
+      /* White  bubble */
       .web {
         width: 26px;
         height: 26px;
@@ -586,7 +593,7 @@
         border-radius: 30px;
         cursor: pointer;
       }
-      /* Anchor text inside button */
+      /* inside button */
       .back a {
         text-decoration: none;
         color: white;
@@ -597,7 +604,7 @@
         align-items: center;
       }
 
-      /* White round icon bubble */
+      /* White bubble */
       .website {
         width: 26px;
         height: 26px;
@@ -719,7 +726,7 @@
         cursor: pointer;
       }
 
-      /* Anchor text inside button */
+      /*  inside button */
       .touch a {
         text-decoration: none;
         color: white;
@@ -730,7 +737,7 @@
         align-items: center;
       }
 
-      /* White round icon bubble */
+      /* White  bubble */
       .get {
         width: 26px;
         height: 26px;
@@ -746,8 +753,7 @@
         font-size: 14px;
       }
       /* village end */
-
-      /* css make by junaid */
+  /* card  section start */
 
       .header{
         padding-top: 50px;
@@ -775,93 +781,185 @@
       /* Cards */
       .cards{
         width: 100%;
+        text-align: center;
         padding-top: 30px;
         color: black;
+        padding-bottom: 30px;
+        padding: 20px;
       }
-      .card{
-       display: flex;
-        background-color: white;
-        border-radius: 20px;
-        /* text-align: center; */
-        width: 230px;
-        height: 230px;
+.main-card{
+  width: 100%;
+ justify-content: center; 
+  display: flex;
+  gap: 20px;
+}
+
+.card{
+  color: black;
+  display: block;
+  text-align: center;
+  width: 290px;
+  padding: 20px;
+  height: 270px;
+  background-color: white;
+  border-radius: 10px;
+ 
+}
+
+.card .icon{
+  border-radius: 50%;
+ padding: 10px;
+ display: flex;
+ align-items: center;
+ position: relative;
+ left: 90px;
+ justify-content: center;
+  background-color: aqua;
+  width: 60px;
+  height: 60px;
+ 
+}
+
+.icon .sign{
+  font-size: 30px;
+  
+}
+.soon{
+  color: red;
+  letter-spacing: 6px;
+  padding-top: 20px;
+}
+.soon2{
+  padding-bottom: 20px;
+}
+
+.soon3{
+  font-family: futurak;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.card span{
+  font-family: apercu;
+}
+
+.scnd{
+  padding-top: 30px;
+}
+
+      .footer {
+            background-color: black;
+            color: rgba(255, 255, 255, 0.7);
+        padding: 50px 30px;
+        width: 100%;
+        position: relative;
       }
-      .card1{
+
+      .footer-container{
         display: flex;
-        flex-direction: column;
+      }
+      
+      .footer-coll{
+        width: 400px;
       }
 
-      /* .footer {
-        background: #111;
-        color: #ccc;
-        padding: 60px 40px;
-        margin-top: 80px;
+      #part{
+        padding-bottom: 20px;
       }
 
-      .footer-container {
-        max-width: 1200px;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 40px;
+     .footer-coll #dining{
+            font-family: apercu;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+        padding-bottom: 20px;
       }
 
-      .footer-col h4 {
-        color: #fff;
-        margin-bottom: 20px;
-      }
-
-      .logo {
-        color: #fff;
-        font-size: 22px;
-        margin-bottom: 15px;
-      }
-
-      .logo span {
-        color: #e50914;
-        font-size: 14px;
-      }
-
-      .footer-col p {
-        font-size: 14px;
-        line-height: 1.7;
-        margin-bottom: 15px;
-      }
-
-      .links a {
-        color: #aaa;
-        font-size: 13px;
-        margin-right: 10px;
+      .links a{
         text-decoration: none;
+        padding-top: 20px;
+         color: rgba(255, 255, 255, 0.7);
       }
-
-      .footer-col ul {
-        list-style: none;
+       /* site links start */
+      
+      .footer-col .area {
         display: flex;
         flex-direction: column;
-      }
-
-      .footer-col ul li {
         font-size: 14px;
-        cursor: pointer;
-        padding: 5px;
+      }
+      .footer-col .area li{
+           padding-bottom: 16px;
+        list-style: none;
+        font-family: apercu;
+        padding-right: 210px;
+        
       }
 
-      .socials span {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 35px;
-        height: 35px;
-        background: #e50914;
-        color: #fff;
-        border-radius: 50%;
-        margin-right: 10px;
-        font-weight: bold;
+       .footer-col h4{
+         padding-bottom: 16px;
+       }
+       /* site links end */
+
+
+       /* contact start */
+
+      .footer-cole{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+      }
+      .footer-cole h4{
+       line-height: 40px;
+      }
+      .footer-cole .blue{
+        font-family: apercu;
+       line-height: 40px;
+       font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+      }
+      .footer-cole .office{
+        font-family: butler;
+        font-weight: 700;
+        font-size: 16px;
+      line-height: 40px;
       }
 
-      .stores img {
-        width: 140px;
-        display: block;
-        margin-top: 15px;
-      } */
+      .fo0ter-cole .break{
+        font-family: apercu;
+       line-height: 40px;
+       font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+      }
+      /* contact end */
+
+      /* social start */
+      .foots{
+      position: absolute;
+      }
+   .foots .footer-col{
+  padding-top: 410px;
+  
+   }
+
+   .foots .socials{
+    font-size: 40px;
+    
+   }
+   .foots .stores{
+    display: flex;
+    flex-direction: column;
+    
+   }
+ .foots .stores img{
+   padding: 10px 0 10px 0px;
+   
+ }
+.footer .see{
+  position: absolute;
+      bottom: 0px;
+      left: 0;
+}
+ /* social end */
